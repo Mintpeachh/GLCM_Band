@@ -31,7 +31,7 @@ if __name__ == '__main__':
     step = [2]
     angle = [0]
     print('-------------------1. Load Data---------------------')
-    Array = []
+    List = []
     for i in range(1,3):
         image = rf"G:/Hyperspectral_Image/PaviaU/paviaU/paviaUB{i}.tif"
         img = np.array(Image.open(image)) # If the image has multi-bands, it needs to be converted to grayscale image
@@ -55,8 +55,7 @@ if __name__ == '__main__':
                 # correlation = get_glcm.calcu_glcm_correlation(glcm_cut, nbit)
                 # Auto_correlation = get_glcm.calcu_glcm_Auto_correlation(glcm_cut, nbit)
         Mean = mean.reshape(-1,1)
-        Array(:, i) = Mean
-        List.append(line)
+        List.append(Mean)
     
         
 
